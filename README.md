@@ -45,7 +45,7 @@ python3 scripts/serve.py --dir board --answers answers --port 8795
 As a Claude Code skill: copy this folder to `~/.claude/skills/dere/`. The agent follows `SKILL.md`:
 collect → triage → write cards → build → serve → read answers → act → next round.
 
-No dependencies beyond Python 3.8+.
+No dependencies beyond Python 3.9+ (tested on 3.9 and 3.13).
 
 ## Files
 

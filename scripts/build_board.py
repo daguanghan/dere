@@ -122,7 +122,7 @@ top3 = "".join(f"<li>{E(x)}</li>" for x in D.get("top3", []))
 stats = "".join(f'<div class="num"><b>{E(s["value"])}</b>{E(s["label"])}</div>' for s in D.get("stats", []))
 lines = sorted({i.get("line", "") for i in items if i.get("line")})
 lopt = "".join(f'<option value="{E(x)}">{E(x)}</option>' for x in lines)
-tabs = "".join(f'<button{" class=\"on\"" if k == 0 else ""} data-p="{k}">{E(t)}</button>' for k, t in enumerate(T["tabs"]))
+tabs = "".join('<button' + (' class="on"' if k == 0 else '') + f' data-p="{k}">{E(t)}</button>' for k, t in enumerate(T["tabs"]))
 bopt = "".join(f'<option value="{b}">{t}</option>' for b, t, _ in T["buckets"])
 
 CSS = """
