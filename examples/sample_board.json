@@ -1,0 +1,71 @@
+{
+  "lang": "en",
+  "title": "dere board",
+  "form_id": "2026-05-04_board",
+  "today": "2026-05-04",
+  "lead": "Everything that needs you, on one page. Decisions are answered inside their cards; tick what you have done; submit as often as you like.",
+  "stats": [
+    {"value": "4", "label": "decisions for you"},
+    {"value": "3", "label": "things only you can do"},
+    {"value": "2", "label": "meetings this week"},
+    {"value": "5", "label": "emails scheduled"}
+  ],
+  "top3": [
+    "Decide the launch date (card 1) — the venue holds the room only until Wednesday",
+    "Sign the supplier contract — legal has cleared it",
+    "Reply to Dana about the budget split"
+  ],
+  "items": [
+    {"id": "launch_date", "bucket": "A", "line": "Launch", "owner": "you", "deadline": "2026-05-06",
+     "action": "Pick the launch date", "why": "The venue releases the room on Wednesday",
+     "bg": "Two dates are open. The 20th gives the team one more week of testing; the 13th matches the press calendar.",
+     "options": [
+       {"key": "A", "text": "20 May — one more week of testing", "recommended": true},
+       {"key": "B", "text": "13 May — matches the press calendar"},
+       {"key": "C", "text": "Other (write in the note)"}
+     ]},
+    {"id": "sign_supplier", "bucket": "A", "line": "Operations", "owner": "you", "deadline": "2026-05-05", "mine": true,
+     "action": "Sign the supplier contract", "why": "Delivery slips one week for every day of delay"},
+    {"id": "dana_budget", "bucket": "A", "line": "Finance", "owner": "you", "deadline": "2026-05-07", "mine": true,
+     "action": "Reply to Dana about the budget split", "why": "She needs it before the board pack closes"},
+    {"id": "hire_designer", "bucket": "B", "line": "Team", "owner": "you", "deadline": "2026-05-20",
+     "action": "Choose how to fill the design gap", "why": "Two releases depend on it",
+     "options": [
+       {"key": "A", "text": "Contract for three months", "recommended": true},
+       {"key": "B", "text": "Open a permanent role"},
+       {"key": "C", "text": "Borrow from another team"}
+     ]},
+    {"id": "docs_site", "bucket": "B", "line": "Launch", "owner": "agent: docs", "deadline": null,
+     "action": "Move the help pages to the new docs site", "why": "Old site is being retired in June"},
+    {"id": "newsletter", "bucket": "C", "line": "Marketing", "owner": "you", "deadline": "2026-05-05",
+     "action": "Approve this week's newsletter subject line", "why": "Small, but it goes out Tuesday morning",
+     "options": [
+       {"key": "A", "text": "Keep the draft subject", "recommended": true},
+       {"key": "B", "text": "Use the shorter one"}
+     ]},
+    {"id": "inbox_storage", "bucket": "C", "line": "Admin", "owner": "you", "deadline": null, "mine": true,
+     "action": "Clear large attachments from the mailbox", "why": "Storage is 80% full"},
+    {"id": "travel_policy", "bucket": "C", "line": "Admin", "owner": "you", "deadline": null,
+     "action": "Confirm the new travel policy applies to contractors", "why": "Finance asked; low impact",
+     "options": [
+       {"key": "A", "text": "Yes, same rules", "recommended": true},
+       {"key": "B", "text": "No, keep the old rules for contractors"}
+     ]}
+  ],
+  "calendar": [
+    {"date": "2026-05-04", "events": [{"time": "09:00", "what": "5 scheduled emails go out"}]},
+    {"date": "2026-05-05", "events": [{"time": "11:00", "what": "Supplier call", "where": "video"}]},
+    {"date": "2026-05-07", "events": [{"time": "14:00", "what": "Board pack closes"}]},
+    {"date": "2026-05-13", "events": [{"time": "all day", "what": "Possible launch date (option B)"}]}
+  ],
+  "lines": [
+    {"name": "Launch", "light": "y", "status": "date open", "now": "Feature-complete; testing 70% done", "next": "You pick the date (card 1)"},
+    {"name": "Finance", "light": "g", "status": "on track", "now": "Q2 forecast agreed", "next": "Budget split to Dana"},
+    {"name": "Team", "light": "r", "status": "gap", "now": "No designer since April", "next": "You choose how to fill it"}
+  ],
+  "sessions": [
+    {"name": "agent: docs", "latest": "Migrated 40 of 62 help pages", "waiting": "Nothing"},
+    {"name": "agent: email", "latest": "Drafted 5 replies; scheduled", "waiting": "Your call on the newsletter subject"}
+  ],
+  "done_today": ["Press list cleaned", "Supplier contract cleared by legal"]
+}
